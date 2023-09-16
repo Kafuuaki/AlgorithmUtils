@@ -1,5 +1,8 @@
 #include <memory>
 
+// chat notes
+// https://chat.openai.com/share/8c21f4db-29a7-446e-9b2d-062efe63a7ef
+
 template <typename T> 
 class MyLinkedList {
 public:
@@ -15,14 +18,14 @@ private:
             return root;
         }
         if (!root) {
-            return nullptr;
+            return std::shared_ptr<MyListNode>(nullptr);
         }
         return _index(index - 1, root->next);
     }
 
     std::shared_ptr<MyListNode> & find(T& data, std::shared_ptr<MyListNode> & curr) {
         if (curr == nullptr) {
-            return nullptr;
+            return std::shared_ptr<MyListNode>(nullptr);
         }
 
         if (curr->data == data) {

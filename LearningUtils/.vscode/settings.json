@@ -1,0 +1,14 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
+    "files.associations": {
+        "iostream": "cpp",
+        "ios": "cpp",
+        "unordered_map": "cpp",
+        "new": "cpp",
+        "__config": "cpp",
+        "ostream": "cpp"
+    }
+}
